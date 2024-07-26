@@ -1,0 +1,152 @@
+/* 基本資訊 */
+#basic-info{
+    height: 70vh; //考慮拿掉
+
+    .profile {
+
+    
+        .profile-pic {
+           width: 350px;
+           position: relative; /*鉛筆*/
+
+           @media screen and (max-width: 768px) {
+                right: 0;
+                top: 200px;
+                width: 280px;
+                position: absolute;
+            }
+
+            img {
+                width: 150px;
+                height: 150px;
+                margin: 60px auto 0;
+                display: block;
+                border-radius: 50%;
+                object-fit: cover;
+
+                @media screen and (max-width: 768px) {
+                    margin: 0;
+                }
+
+                
+                @media screen and (max-width: 390px) {
+                    margin-top: 50px;
+                }
+            }
+
+
+            /* 更改按鈕 */
+            .edit-pic-btn {
+                width: 50px;
+                height: 50px;
+
+                position: absolute;
+                bottom: 140px;
+                right: 100px;
+                background-color: #F7F2ED;
+                border: none;
+                border-radius: 50%;
+                cursor: pointer;
+                padding: 5px;
+                font-size: 3rem;
+
+                @media screen and (max-width: 768px) {
+                    right: 130px;
+                    top: 110px;
+                }
+
+                @media screen and (max-width: 390px) {
+                    right: 130px;
+                    top: 150px;
+                }
+            }
+        }
+
+
+        ul{
+            padding-top: 45px;
+            list-style-type: none;
+
+            @media screen and (max-width: 390px) {
+                padding-top: 180px;
+                padding-left: 0;
+            }
+        
+            li{
+                height: 40px;
+                margin-bottom: 20px;
+
+                p:first-child {
+                    font-size: 24px;
+                    position: relative;
+
+                    &::after{
+                        content: " ";
+                        position: absolute;
+                        top: 3px;
+                        left: 70px;
+                        border-right: 3px solid #000000;
+                        height: 30px;
+                    }
+
+                    @media screen and (max-width: 390px) {
+                        font-size: 1.8rem;
+                        
+                    }
+                }
+                
+                p:nth-child(2) {
+                    font-size: 20px;
+                    padding: 0 auto;
+                    line-height: 35px;
+
+                    @media screen and (max-width: 390px) {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+
+
+    /* 2顆按鈕 */
+    .buttons {
+        width: 15vw;
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: 768px) {
+            width: 60vw;
+        }
+
+       
+
+
+        .password-btn{
+            width: 135px;
+            height: 50px;
+            border: 2px solid #2B4F61;
+            font-size: 2rem;
+            border-radius: 16px;
+            background-color: #fff;
+
+            @media screen and (max-width: 390px) {
+                /* width: 200px ; */
+                /* font-size: 1.2rem; */
+            }
+        }
+
+        .edit-btn{
+            padding: 5px 20px;
+            border: none;
+            border-radius: 16px;
+            font-size: 2rem;
+            color: #fff;
+            background-color: #2B4F61;
+
+            @media screen and (max-width: 390px) {
+                /* white-space:nowrap; */
+            }
+        }
+    }
+}

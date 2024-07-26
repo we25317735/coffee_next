@@ -1,0 +1,105 @@
+/* 訂單查詢 */
+#order-info{
+    height: 100%;
+
+    .img-box{
+        width: 220px;
+        // height: 130px;
+
+        @media (max-width: 768px) {
+            width: 220px;
+            // height: 100%;
+            
+        }
+        
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .data-box{
+        width: 100%;
+    }
+
+        
+    h3{
+        font-size: 2.4rem;
+
+        @media (max-width: 768px) {
+            font-size: 2rem;
+        }
+
+        @media (max-width: 390px) {
+            width: 150px;
+        
+            font-size: 1.2rem;
+        }
+    }
+
+    .all-amount{
+        width: 80px;
+        height: 40px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size:2rem;
+
+        background-color: #2B4F61;
+
+        @media (max-width: 390px) {
+            width: 45px;
+            height: 25px;
+            font-size: 1.2rem;
+        }
+    }
+
+    /* 檢視明細 按鈕 */
+    .details-btn{
+        width: 100px;
+        height: 60px;
+        border-radius: 16px;
+        border: 3px solid #2B4F61;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        
+
+        background-color: #D8CECE;
+
+        @media (max-width: 768px) {
+            bottom: 20px;
+            right: 10px;
+        }
+
+        @media (max-width: 390px) {
+            width: 50px;
+            height: 25px;
+            border-radius: 5px;
+        }
+
+        p{
+            font-size: 2rem;
+            color: #2B4F61;
+            font-weight: 700;
+
+            @media (max-width: 390px) {
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    /* 訂單金額 */
+    .amount{
+        font-size: 2rem;
+
+        @media (max-width: 768px) {
+            // width: 450px;
+            font-size: 1.2rem;
+        }
+    }
+}

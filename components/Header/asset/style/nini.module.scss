@@ -1,0 +1,116 @@
+
+
+
+.container-fluid{
+    background-image: url(../img/bg-noise.png);
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 32px;
+
+
+    .wrap-left{
+        display: flex;
+        width: 200px;
+        justify-content: space-between;
+
+        a{
+            font-size: 1.2rem;
+            text-decoration: none;
+            font-weight: bold;
+            
+        }
+    }
+    
+    .wrap-middle{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        a{
+            text-decoration: none;
+            p{
+                text-align: center;
+                font-size: 1.2rem;
+                margin: 0;
+                font-weight: bold;
+            }
+        }
+        
+    }
+
+    .wrap-right{
+        display: flex;
+        width: 100px;
+        justify-content: space-between;
+        a img{
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+.phone{
+    display: none;
+}
+
+@media (max-width: 768px){
+    .desktop{
+        display: none;
+    }
+    .phone{
+        display: flex;
+        padding: 6px 20px;
+
+        .wrap-left-phone{
+
+            img{
+                width: 26px;
+                height: 26px;
+            }
+        }
+
+        .wrap-right-phone{
+
+            a{
+                margin-left: 8px;
+            }
+
+            img{
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}
+
+///俊成新增
+@keyframes slideOutToLeft {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromLeft {
+    from {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  }
+  
+  .slide-out {
+    animation: slideInFromLeft 0.5s forwards;
+  }
+  
+  .slide-in {
+    animation: slideOutToLeft 0.5s forwards;
+  }

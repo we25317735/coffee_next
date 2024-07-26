@@ -1,0 +1,109 @@
+
+/* 好康優惠 */
+#discounts{
+    width: 100%;
+
+
+    #coupon{
+        width: auto;
+        height: auto;
+        overflow: hidden;
+        background-color: #fff;
+
+        //////
+        @media screen and (max-width: 390px) {
+            height: 10vh;
+        }
+
+        // 初始化
+        p{
+            margin: 0;
+        }
+        // 初始化結束
+    
+    
+        .card-img-box{
+            max-width: 15vw;
+     
+    
+            img{
+                max-width: 100%;
+                height: 100%;
+                object-fit: fill;
+            }
+        }
+    
+        .card-content{
+            width: 30vw;
+            background-color: #fff;
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+    
+    
+            // 折扣數字
+            .discount-number{
+                font-size: 3.6rem;
+                
+                @media screen and (max-width: 390px) {
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                }
+            }
+    
+            // 可使用 按鈕
+            .usable-btn{
+                padding: 8px 10px;
+                border: 2px solid #2f3131;
+                border-radius: 15px;
+                font-size: 2rem;
+                background-color: #fff;
+
+                @media screen and (max-width: 390px) {
+                    font-size: 1.2rem;
+                    padding: 4px 5px;
+                    margin-top: 0 !important;
+                }
+            }
+    
+            // 優惠券的名稱
+            .coupon-name{
+                
+                span{
+                    padding: 2px 8px;
+                    font-size: 1.6rem;
+                    color: white;
+                    background-color: #2B4F61;
+
+                    @media screen and (max-width: 390px) {
+                        padding: 2px;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+    
+            // 條件
+            .condition{
+                font-size: 1.6rem;
+                color: #2f3131ad;
+
+                @media screen and (max-width: 390px) {
+                    font-size: 1.2rem;
+                }
+            }
+    
+            // 日期
+            .date{
+                font-size: 1.6rem;
+                color: #4f4b4b4e;
+
+                @media screen and (max-width: 390px) {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+   
+
+}
