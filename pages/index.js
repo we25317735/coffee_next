@@ -1,6 +1,6 @@
 import Head from "next/head";
 import User from "./User";
-// import Login from "./Login";
+import Login from "./Login/login";
 
 
 export default function Home() {
@@ -21,8 +21,7 @@ export default function Home() {
       </Head>
       <main>
           <User/>
-
-          {/* <Xxx/> */}
+          {/* <Login/> */}
       </main>
     </>
   );

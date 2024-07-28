@@ -8,7 +8,6 @@ import VectorIcon from './asset/img/Vector.png'; //搜尋
 import carIcon from './asset/img/car.png'; //購物車
 import sandwichIcon from './asset/img/sandwich.png'; //三明治
 import userIcon from './asset/img/user.png'; // 使用者
-import xx from './asset/img/XX.png'; // 使用者
 
 
 
@@ -77,6 +76,10 @@ export default function Header() {
       <div className={`${styles.phone} ${animationClass} ${animationToggle ? "d-block":"d-none"} p-0 `} style={{position:"relative", zIndex:2}}>
         <Phone_menu/>
       </div>
+
     </header>
   );
 }
+
+
+
